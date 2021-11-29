@@ -1,5 +1,6 @@
 import {
     HeartIcon,
+    MusicNoteIcon,
     VolumeUpIcon as VolumeDownIcon,
     DesktopComputerIcon,
     CollectionIcon as Collection,
@@ -81,6 +82,7 @@ function Player() {
                     <h3>{songInfo?.name}</h3>
                     <p>{songInfo?.artists?.[0]?.name}</p>
                 </div>
+                <HeartIcon className="button" />
             </div>
 
             {/* Center Left */}
@@ -110,6 +112,7 @@ function Player() {
 
             {/* Center Right */}
             <div className="flex items-center justify-end space-x-4" >
+                <MusicNoteIcon className="button w-5 h-5" />
                 <Collection className="button w-5 h-5" />
                 <DesktopComputerIcon className="button w-5 h-5" />
             </div>
